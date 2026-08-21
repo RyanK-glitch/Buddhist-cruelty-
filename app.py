@@ -67,7 +67,7 @@ if user_input := st.chat_input("Ask about Buddhist institutional history, expans
 
         try:
             stream = client.chat.completions.create(
-                model="llama3-70b-8192",
+                model="openai/gpt-oss-120b",
                 messages=messages_for_api,
                 temperature=0.2,
                 max_tokens=3072,
